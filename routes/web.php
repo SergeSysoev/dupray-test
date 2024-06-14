@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\GameController;
+
+Route::get('/', [GameController::class, 'index']);
+
+Route::get('/games', [GameController::class, 'fetchGames']);
+Route::get('/getGames', [GameController::class, 'fetchGames']);
