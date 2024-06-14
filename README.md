@@ -38,3 +38,5 @@ docker run --rm \
 <p>Shut down the Docker container: <code>./vendor/bin/sail down</code>.</p>
 
 <p>Check the Docker container status: <code>./vendor/bin/sail ps</code>.</p>
+
+Run migrations: <code>php artisan migrate</code> inside the root folder.
